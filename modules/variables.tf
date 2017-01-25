@@ -90,13 +90,13 @@ variable "data_ebs_vol_type" {
 variable "data_ebs_vol_size" {
   type        = "string"
   description = "The Size of the ebs volume"
-  default     = "12"
+  default     = "0"
 }
 
 variable "data_ebs_device_name" {
   type        = "string"
   description = "The name of the device to mount."
-  default     = "/dev/sdf"
+  default     = ""
 }
 
 variable "data_ebs_snapshot_id" {
@@ -108,7 +108,7 @@ variable "data_ebs_snapshot_id" {
 variable "data_ebs_vol_del_on_term" {
   type        = "string"
   description = "Whether the volume should be destroyed on instance termination."
-  default     = false
+  default     = true
 }
 
 variable "logs_ebs_vol_type" {
@@ -120,13 +120,13 @@ variable "logs_ebs_vol_type" {
 variable "logs_ebs_vol_size" {
   type        = "string"
   description = "The Size of the ebs volume"
-  default     = "12"
+  default     = "0"
 }
 
 variable "logs_ebs_device_name" {
   type        = "string"
   description = "The name of the device to mount."
-  default     = "/dev/sdg"
+  default     = ""
 }
 
 variable "logs_ebs_snapshot_id" {
@@ -138,5 +138,5 @@ variable "logs_ebs_snapshot_id" {
 variable "logs_ebs_vol_del_on_term" {
   type        = "string"
   description = "Whether the volume should be destroyed on instance termination."
-  default     = false
+  default     = true
 }
