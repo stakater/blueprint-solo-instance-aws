@@ -51,10 +51,6 @@ variable "user_data" {
   description = "Initialization data for the instance"
 }
 
-variable "instance-profile-name" {
-  description = "Name of the instnace profile to associate with the instance"
-}
-
 # Root EBS
 variable "root_vol_type" {
   type        = "string"
