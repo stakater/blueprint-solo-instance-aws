@@ -6,6 +6,7 @@ output "private-ip" {
   value = "${aws_eip.elastic-ip.private_ip}"
 }
 
+# instnace id
 output "instance-id" {
   value = "${aws_eip.elastic-ip.instance}"
 }
