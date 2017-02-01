@@ -3,7 +3,7 @@ output "security_group_id" {
 }
 
 output "instance-id" {
-  value = "${coalesce(aws_instance.solo-instnace.id, aws_instance.solo-instance-ebs.id)}"
+  value = "${coalesce(aws_instance.solo-instance.id, aws_instance.solo-instance-ebs.id)}"
 }
 
 output "private-ip" {
