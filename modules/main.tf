@@ -8,6 +8,7 @@ module "iam" {
 module "solo-instance" {
   source                      = "./solo-instance"
   name                        = "${var.name}"
+  vpc_id                      = "${var.vpc_id}"
   subnet_id                   = "${var.subnet_id}"
   ami                         = "${var.ami}"
   instance_type               = "${var.instance_type}"
