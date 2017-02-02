@@ -14,7 +14,7 @@ module "solo-instance" {
   key_name                    = "${var.key_name}"
   associate_public_ip_address = "${var.associate_public_ip_address}"
   user_data                   = "${var.user_data}"
-  iam_instance_profile        = "${module.iam.instance-profile-name}"
+  instance-profile-name       = "${module.iam.instance-profile-name}"
   ebs_optimized               = "${var.ebs_optimized}"
   # Root EBS Volume
   root_vol_type               = "${var.root_vol_type}"
