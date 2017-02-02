@@ -40,7 +40,7 @@ variable "user_data" {
 }
 
 variable "instance-profile-name" {
-  description = "Name of the instnace profile to associate with the instance"
+  description = "Name of the instance profile to associate with the instance"
 }
 
 # Root EBS
