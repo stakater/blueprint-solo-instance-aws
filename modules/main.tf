@@ -38,5 +38,4 @@ module "solo-instance" {
 module "elastic-ip" {
   source              = "./elastic-ip"
   instance_id         = "${module.solo-instance.instance-id}"
-  instance_private_ip = "${module.solo-instance.private-ip}"
 }
