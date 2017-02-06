@@ -37,5 +37,6 @@ module "solo-instance" {
 
 module "elastic-ip" {
   source              = "./elastic-ip"
+  enable_eip          = "${var.enable_eip}"
   instance_id         = "${module.solo-instance.instance-id}"
 }

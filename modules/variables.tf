@@ -46,6 +46,11 @@ variable "associate_public_ip_address" {
   default     = false
 }
 
+variable "enable_eip" {
+  description = "If set to true, This will create an elastic ip for the instance"
+  default = "0"
+}
+
 variable "user_data" {
   type        = "string"
   description = "Initialization data for the instance"
